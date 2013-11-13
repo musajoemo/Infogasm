@@ -3,6 +3,74 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
+AATG IW = As a Tech Geek junkie I want
+AATG IWTBAT = As a Tech Geek I want to be able to
+
+1) AATG IW to speed read New York Times News 
+	Step 1 -	write API call to get a list of articles from hacker news
+	Step 2 -	get a list of links to those articles
+	Step 3 -	select that article and scrape that website
+	Step 4 -	read that article in the command line one word at a time
+
+2) AATG IWTBAT control the speed of how fast those words appear
+	Step 1 - 	take read formula from 1-4 and make it a controllable variable
+	Step 2 -	add field for user to input WPM
+
+3) AATG IWTBAT dance in the street
+	Step 1 -	get a cassette walkman
+	Step 2 -	dance like no one is watching
+	Step 3 -	get arrested for public lewdness
+
+4) AATG IW long words appear a little slower
+	Step 1 - 	write if statement that takes the array's length into account and move it modify the formula in 2-1
+	Step 2 -	find a good spot for additional time per character
+
+5) AATG IW to pause or stop the speed reading playback
+	Step 1 -	no idea where to start
+	Step 2 -	♫♪♫ dance with the dead in my dreams ♫♪♫
+	Step 3 -	Add button which pauses and starts playback
+	------
+	Stretch -	add rewind feature
+	Stretch -	allow user to control how many words they rewind the playback
+
+6) AATG IW names to appear even slower or even appear in their own column
+	Step 1 -	get a list of common journalism words (or even dictionary) (5000 - 10000) to compare article to
+	- or -
+	Step 1 -	get a list of names and compare article to them
+	
+	Step 2 -	Affix an identifier 
+	Step 3 -	Store names starting with a letter in their own directory (like Alex would be in an A directory) to speed up search & compare
+
+
+Questions from group talk:
+How am how am I going to deal with this hour by hour - store scraped info in DB? handle each request as they come and store in DB? When do I purge / or archive. Only do live requests? - problem - api.ihackernews.com/page is not an official api and is prone to crashing. 
+
+Sliding text (future goal) instead of flashing one word at a time, or eyes moving back to each line, use some HTML 5 wizardry to scroll the words across the field
+
+Models:
+User belongs_to :Stories (user doesn't create stories and is only able to read them, is it a has_many or belongs_to relationship?)
+Author has_many :Stories
+Story belongs_to :Author
+Story has_many :Users
+Story has_one Url
+Url belongs_to Story
+
+Paginate - 3 lines of code controller & view
+
+Api call fields needed
+
+copywrite
+url
+title
+byline (author)
+abstract
+asset_id
+source
+#media-metadata (pictures)
+	#caption
+	#mediumThreeByTwo210
+	#url
+
 Things you may want to cover:
 
 * Ruby version

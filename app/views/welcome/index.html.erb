@@ -22,8 +22,9 @@
 			<h2>Home</h2>
 			<p>So you want learn how to speed read?<br>That's nice but I'm not going to teach you.</p><br>
 				<div class="submit">
-			<%= button_tag("really?")%>
+				<%= button_tag("really?")%>
 				</div>
+			<br><br><br><p>Insert pop up saying "No I'm going to show you</p>
 			</div>
 
 		</div>
@@ -33,8 +34,7 @@
 		<div id="instructions" class="panel">
 			<div class="content">
 				<h3>Invisible</h3>
-				<p>Submit your url</p>
-
+				<p>Sorry I'm not quite ready for you yet.</p>
 			</div>
 		</div>
 		<!-- /Portfolio -->
@@ -42,8 +42,8 @@
 		<!-- About -->
 		<div id="new_york_times" class="panel">
 			<div class="content">
-				<h3>Articles</h3>
-					<p>This is where I'll list out the sections</p>
+				<h3>You Can't See Me</h3>
+					<p>This is where I'll list out NY Times sections</p>
 				</div>
 		</div>
 		<!-- /About -->
@@ -51,22 +51,9 @@
 		<!-- Contact -->
 		<div id="user_articles" class="panel">
 			<div class="content">
-				<h3>LYO</h3>
-					<%= form_for(@post) do |f| %>
-						<div class="field">
-    					<%= f.label :title %><br>
-    					<%= f.text_field :title %>
-  					</div>
-					  <div class="field">
-					    <%= f.label :body %><br>
-					    <%= f.text_area :body %>
-					  </div>
-					  <div class="actions">
-					    <%= f.submit %>
-					  </div>
-					<% end %>
-
+				<p style="color:white;">LYO</p>
 					<div class="submit">
+					<%= text_area_tag(:message, "This is where you would put an article if I was a better programmer", size: "48x12") %> <br>
 					<%= button_tag("submit")%>
 				</div>
 			</div>
@@ -86,5 +73,3 @@
 
 	</body>
 </html>
-
-

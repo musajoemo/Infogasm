@@ -3,6 +3,37 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
+
+WR		WPS		WPM		
+0.25	4.00	240
+0.15	6.67	400
+0.14	7.14	429
+0.13	7.69	462
+0.12	8.33	500
+0.11	9.09	545
+0.10	10.00	600
+0.09	11.11	667
+0.08	12.50	750
+0.07	14.29	857
+0.06	16.67	1000
+0.05	20.00	1200
+0.04	25.00	1500
+0.03	33.33	2000
+0.02	50.00	3000
+0.013	75.00	4500
+		
+Third grade student				150
+Eight grade student				250
+Average Adult							300
+Average college student		450
+Average high level exec		575
+Speed readers							1500
+World record holder 			4500
+
+
+Can read an average book in about an hour @ 1000 wpm
+
+
 AATG IW = As a Tech Geek junkie I want
 AATG IWTBAT = As a Tech Geek I want to be able to
 
@@ -71,26 +102,58 @@ source
 	#mediumThreeByTwo210
 	#url
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+
+"Animal Farm"
+29,966 words (75% of books have more words)
+
+"Ethan Frome"
+30,191 words (75% of books have more words)
+
+"The Crying of Lot 49"
+46,573 words (64% of books have more words)
+
+"Slaughterhouse-Five"
+47,192 words (64% of books have more words)
+
+"We Have Always Lived in the Castle"
+53,510 words (58% of books have more words)
+
+"Lord of the Flies
+62,481 words (51% of books have more words)
+
+"Brave New World"
+64,531 words (50% of books have more words)
+
+"The Adventures of Tom Sawyer"
+70,570 words (45% of books have more words)
+
+"Portnoy’s Complaint"
+78,535 words (41% of books have more words)
+
+"Lolita"
+112,473 words (21% of books have more words)
+
+"Madame Bovary"
+117,963 words (18% of books have more words)
+
+"Mansfield Park"
+159, 344 words (9% of books have more words)
+
+"Moby-Dick"
+209,117 words (4% of books have more words)
+
+"East of Eden"
+226,741 words (3% of books have more words)
+
+"Ulysses"
+262,869 words (2% of books have more words)
+
+"Middlemarch"
+310,593 words (2% of books have more words)
+
+"War and Peace"
+544,406 words (0% of books have more words)

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131111190231) do
+ActiveRecord::Schema.define(version: 20131113210819) do
 
   create_table "profiles", force: true do |t|
     t.string   "user_id"
@@ -19,6 +19,13 @@ ActiveRecord::Schema.define(version: 20131111190231) do
     t.string   "interests"
     t.text     "bio"
     t.string   "twitter"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "user_articles", force: true do |t|
+    t.string   "url"
+    t.string   "css_selector"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

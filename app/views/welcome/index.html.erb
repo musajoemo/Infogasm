@@ -1,10 +1,90 @@
-<h2>Welcome to your Infogasm</h2>
-<h3>end results may vary</h3>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<title>Infogasm</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Mike Tener" /> 
+		<link href='http://fonts.googleapis.com/css?family=Electrolize'/>
+	</head>
+	<body>
+		
+		<!-- Home -->
+		<div id="home" class="panel">
+			<div class ="content">
+			<h2>Home</h2>
+			<p>So you want learn how to speed read?<br>That's nice but I'm not going to teach you.</p><br>
+				<div class="submit">
+			<%= button_tag("really?")%>
+				</div>
+			</div>
 
-<div= "article_list">
-	<ul>  
-		<li>This is a list</li>
-	</ul>
-</div>
+		</div>
+		<!-- /Home -->
+		
+		<!-- Portfolio -->
+		<div id="instructions" class="panel">
+			<div class="content">
+				<h3>Invisible</h3>
+				<p>Submit your url</p>
 
-<%= text_field :article, :url, "size" => 40 %>
+			</div>
+		</div>
+		<!-- /Portfolio -->
+		
+		<!-- About -->
+		<div id="new_york_times" class="panel">
+			<div class="content">
+				<h3>Articles</h3>
+					<p>This is where I'll list out the sections</p>
+				</div>
+		</div>
+		<!-- /About -->
+		
+		<!-- Contact -->
+		<div id="user_articles" class="panel">
+			<div class="content">
+				<h3>LYO</h3>
+					<%= form_for(@post) do |f| %>
+						<div class="field">
+    					<%= f.label :title %><br>
+    					<%= f.text_field :title %>
+  					</div>
+					  <div class="field">
+					    <%= f.label :body %><br>
+					    <%= f.text_area :body %>
+					  </div>
+					  <div class="actions">
+					    <%= f.submit %>
+					  </div>
+					<% end %>
+
+					<div class="submit">
+					<%= button_tag("submit")%>
+				</div>
+			</div>
+		</div>
+		<!-- /Contact -->
+		
+		<!-- Header with Navigation -->
+		<div id="header">
+			<h1>Infogasm</h1>
+			<ul id="navigation">
+				<li><a id="link-home" href="#home">Home</a></li>
+				<li><a id="link-instructions" href="#instructions">Instructions</a></li>
+				<li><a id="link-new_york_times" href="#new_york_times">New York Times</a></li>
+				<li><a id="link-user_articles" href="#user_articles">Load Your Own</a></li>
+			</ul>
+		</div>
+
+	</body>
+</html>
+
+
